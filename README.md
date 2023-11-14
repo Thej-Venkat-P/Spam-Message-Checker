@@ -18,4 +18,4 @@ To run this program, you will need the following:
 •	The Python file “urlSafety.py”, which contains the function for checking the safety of a URL.
 •	The following Python libraries: pandas, sklearn, and re. You can install them using the command “pip install pandas sklearn“ in the Command Terminal.
 
-Refer to the ML Spam Checker Word Document for Better Explanation of the Code.
+Refer to the ML Spam Checker Word Document for Better Explanation of the Code and spamChecker.mp4 video for the Working of the code.
