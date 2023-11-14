@@ -15,7 +15,7 @@ The program requires the following files and libraries to be in the same directo
 # Setup
 To run this program, you will need the following:  
 •	Python 3.8 or higher
-•	The DataSet file “spam.csv”, which contains the data for training and testing the Machine learning model.  
+•	The DataSet file “spam.csv”, which contains the data for training and testing the Machine learning model should be downloaded from Data folder and be placed in the same folder as the program.  
 •	The Python file “urlSafety.py”, which contains the function for checking the safety of a URL.  
 •	The following Python libraries: pandas, sklearn, and re. You can install them using the command “pip install pandas sklearn“ in the Command Terminal.  
   
