@@ -1,0 +1,33 @@
+Python script that trains a machine learning model to classify messages as spam or not spam, and then provides functionality to check the safety of URLs and messages.
+
+Here's a detailed explanation of the code:
+
+1. Import necessary libraries:
+- `pandas` for data manipulation and analysis.
+- `train_test_split` from `sklearn.model_selection` for splitting the dataset into training and testing sets.
+- `CountVectorizer` from `sklearn.feature_extraction.text` for converting text data into a matrix of token counts.
+- `svm` from `sklearn` for Support Vector Machine model.
+- `checkLink` from `urlSafety` for checking the safety of URLs.
+- `re` for regular expression operations.
+
+2. Read the spam dataset from a CSV file and handle missing values.
+
+3. Preprocess the data:
+- Extract the "Message" and "Category" columns from the dataset.
+- Use `CountVectorizer` to convert the text data into a matrix of token counts.
+
+4. Train the Support Vector Machine (SVM) model using the features and categories.
+
+5. Define a function `find_urls` to extract URLs from a given message using regular expressions.
+
+6. Define a function `checkSpam` to check if a given message is spam or not:
+- Convert the message to lowercase.
+- Use the trained model to predict if the message is spam or not.
+- If the message contains URLs, check the safety of each URL using the `checkLink` function.
+
+7. Provide an example spam message and check its safety using the `checkSpam` function.
+
+8. Implement a loop to interact with the user:
+- Allow the user to choose between quitting, checking the safety of URLs, or checking the safety of a message.
+- If the user chooses to check the safety of URLs, prompt for the number of URLs and then check each URL using the `checkLink` function.
+- If the user chooses to check the safety of a message, prompt for the message contents and then check its safety using the `checkSpam` function.
